@@ -21,21 +21,47 @@
 var number = "7";
 var numberList =["3","7","8","9","5","7","2","7"];
 var howNunmbers = numberList.length;  // declarada tan solo para el enunciado final.
-var repeatNumber = 0;
+var repeatNumber = [];
 var resul = 0;
 
 function countRepeatNumber (number, numberList){
       for (var i = 0; i < numberList.length; i++) {
         if (numberList[i] === number) {
-          repeatNumber = repeatNumber+numberList[i]; // Da un array q empieza por 0.
+          repeatNumber = repeatNumber + numberList[i]; // Da un array q empieza por 0.
+
         }
+
       }
 
     return repeatNumber;
 }
 countRepeatNumber(number,numberList);
-console.log("La lista tiene "+howNunmbers+" números y el número repetido es el "+number+". Se repite "+ repeatNumber.length+ " veces.");
-window.alert("La lista tiene "+howNunmbers+" números y el número repetido es el "+number+". Se repite "+ repeatNumber.length+ " veces.")
+console.log("La lista tiene "+howNunmbers+" números y el número repetido es el "+number+". Se repite "+ repeatNumber.length + " veces.");
+window.alert("La lista tiene "+howNunmbers+" números y el número repetido es el "+number+". Se repite "+ repeatNumber.length + " veces.")
+
+
+
+
+
+//prueba
+// var number = 1;
+// var arrayNumbers = [1,3,4,2,1,3,4,5];
+// var total = 0;
+// function numberCount (number, arrayNumbers) {
+//   for ( i = 0; i<arrayNumbers.length; i++); {
+//     if (arrayNumbers[i] === number) {
+//       total == total + 1
+//     }
+//   }
+//   return total;
+// }
+
+
+
+
+
+
+
 
 
 
